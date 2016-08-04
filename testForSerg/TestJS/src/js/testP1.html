@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+window.onload = function() {
+var a = new Array()
+var a = ['aaa','bbb','xxx','ddd']
+ var i=0;
+    
+
+
+var timerId = setTimeout(function tick() { 
+
+   if(i<4){ document.getElementById('txt1').innerHTML += a[i++]+', ';}
+ 
+  timerId = setTimeout(tick, 1000);
+   
+}, 1000);
+
+
+
+}
+
+</script>
+<div id='txt1'>
+
+</div>
+</body>
+</html>
